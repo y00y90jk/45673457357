@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claimer.me - Premium Username Marketplace</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/util.css">
+    <script src="js/api-service.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Add AOS library for scroll animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg-particles" id="particles-js"></div>
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="blur-effect blur-1"></div>
+    <div class="blur-effect blur-2"></div>
+    <div class="blur-effect blur-3"></div>
+
+    <!-- Header with navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="#" class="nav-logo">claimer<span class="logo-dot">.</span>me</a>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#featured" class="nav-link">Featured</a>
+                <a href="#browse" class="nav-link">Browse</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+                <a href="#browse" class="btn btn-primary">Browse Usernames</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="#" class="mobile-link active">Home</a>
+            <a href="#featured" class="mobile-link">Featured</a>
+            <a href="#browse" class="mobile-link">Browse</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <div class="mobile-menu-buttons">
+                <a href="#contact" class="btn btn-outline full-width">Contact Us</a>
+                <a href="#browse" class="btn btn-primary full-width">Browse Usernames</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero section with enhanced social channels and trust metrics -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="hero-title">Claimer<span class="gradient-text"> Team</span></h1>
+                <p class="hero-description">
+                    Each username is unique, verified, OGE, Full Access, High Quality, Fresh billing, Fresh Account,
+                    First owner, 24/7 Support.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#browse" class="btn btn-primary btn-lg">
+                        <i class="fas fa-search"></i>
+                        Browse Collection
+                    </a>
+                    <a href="#featured" class="btn btn-outline btn-lg">
+                        <i class="fas fa-star"></i>
+                        View Featured
+                    </a>
+                </div>
+            </div>
+            <div class="trust-badges" data-aos="fade-up" data-aos-delay="250">
+                <!-- Trust badges as specified -->
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="badge-content">
+                        <span class="badge-title">2000+ Sales</span>
+                        <span class="badge-description">Trusted for 2+ years</span>
+                    </div>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="badge-content">
+                        <span class="badge-title">Secure Escrow</span>
+                        <span class="badge-description">Protected transactions</span>
+                    </div>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="badge-content">
+                        <span class="badge-title">Instant Delivery</span>
+                        <span class="badge-description">Get it immediately</span>
+                    </div>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="badge-content">
+                        <span class="badge-title">Verified Seller</span>
+                        <span class="badge-description">Discord trusted seller</span>
+                    </div>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="badge-content">
+                        <span class="badge-title">24/7 Support</span>
+                        <span class="badge-description">Always here to help</span>
+                    </div>
+                </div>
+            </div>
+            <div class="community-links" data-aos="fade-up" data-aos-delay="350">
+                <div class="community-title">
+                    <h3>Join Our Communities</h3>
+                    <p>Get instant New Claims & Offers, support, and exclusive Swaps</p>
+                </div>
+                <div class="community-buttons">
+                    <a href="https://discord.claimer.me" class="community-link discord-link" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        <span>
+                            <strong>Discord</strong>
+                        </span>
+                    </a>
+                    <a href="https://telegram.claimer.me" class="community-link telegram-link" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                        <span>
+                            <strong>Telegram</strong>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured section with enhanced responsive structure -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Premium Selection</span>
+                <h2 class="section-title">Featured Usernames</h2>
+                <p class="section-description">
+                    Discover our collection of rare, short, and meaningful usernames that are in high demand.
+                </p>
+            </div>
+
+            <div class="featured-slider" data-aos="fade-up" data-aos-delay="100">
+                <!-- Add wrapper for better mobile control -->
+                <div class="featured-slider-container">
+                    <div class="featured-slider-track">
+                        <!-- Dynamic content will be added by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="featured-controls">
+                    <button class="featured-control prev" aria-label="Previous slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="featured-control next" aria-label="Next slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse section -->
+    <section id="browse" class="browse-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Explore Collection</span>
+                <h2 class="section-title">Browse All Usernames</h2>
+                <p class="section-description">
+                    Filter through our extensive collection to find the perfect username for your brand or personal use.
+                </p>
+            </div>
+
+            <div class="search-section" data-aos="fade-up" data-aos-delay="100">
+                <div class="search-tabs">
+                    <button class="search-tab active" data-filter="all">
+                        <i class="fas fa-layer-group"></i>
+                        All
+                    </button>
+                    <!-- <button class="search-tab" data-filter="hightier">
+                        <i class="fas fa-crown"></i>
+                        High Tier
+                    </button>
+                    <button class="search-tab" data-filter="meaning">
+                        <i class="fas fa-lightbulb"></i>
+                        Meaningful
+                    </button>
+                    <button class="search-tab" data-filter="repeated">
+                        <i class="fas fa-clone"></i>
+                        Repeated
+                    </button> -->
+                </div>
+
+                <form class="search-form">
+                    <div class="search-grid">
+                        <div class="search-group">
+                            <label class="search-label" for="username-search">
+                                <i class="fas fa-at"></i>Username
+                            </label>
+                            <div class="search-input-wrapper">
+                                <input type="text" id="username-search" class="search-input"
+                                    placeholder="Enter username...">
+                                <span class="input-focus-border"></span>
+                            </div>
+                        </div>
+
+                        <div class="search-group">
+                            <label class="search-label" for="length-select">
+                                <i class="fas fa-text-width"></i>Length
+                            </label>
+                            <div class="select-wrapper">
+                                <select id="length-select" class="search-select">
+                                    <option value="all">Any Length</option>
+                                    <option value="3">3 Characters</option>
+                                    <option value="4">4 Characters</option>
+                                    <option value="5">5 Characters</option>
+                                    <option value="6+">6+ Characters</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="input-focus-border"></span>
+                            </div>
+                        </div>
+
+                        <div class="search-group">
+                            <label class="search-label" for="price-select">
+                                <i class="fas fa-tag"></i>Price Range
+                            </label>
+                            <div class="select-wrapper">
+                                <select id="price-select" class="search-select">
+                                    <option value="all">Any Price</option>
+                                    <option value="under500">Under $500</option>
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="1000-5000">$1,000 - $5,000</option>
+                                    <option value="over5000">Over $5,000</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="input-focus-border"></span>
+                            </div>
+                        </div>
+
+                        <div class="search-group search-button-group">
+                            <button type="submit" class="search-button">
+                                <span class="search-button-content">
+                                    <i class="fas fa-search"></i>
+                                    <span>Search Usernames</span>
+                                </span>
+                                <span class="search-button-animation"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="search-results-info">
+                <div class="results-count">Showing <span id="results-count">0</span> usernames</div>
+                <div class="results-sort">
+                    <label for="sort-select">Sort by:</label>
+                    <div class="select-wrapper small">
+                        <select id="sort-select" class="search-select">
+                            <option value="recent">Most Recent</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="length">Length: Shortest First</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="username-cards" data-aos="fade-up" data-aos-delay="200">
+                <!-- Dynamic content will be added by JavaScript -->
+            </div>
+
+            <div class="loading-spinner" id="loading-spinner">
+                <div class="spinner-animation">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <span>Loading usernames...</span>
+            </div>
+
+            <div class="load-more-container">
+                <button id="load-more" class="btn btn-outline btn-lg">
+                    <i class="fas fa-sync-alt"></i>
+                    Load More
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Common Questions</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">
+                    Find answers to the most common questions about our username marketplace.
+                </p>
+            </div>
+
+            <div class="faq-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What makes these usernames special?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our usernames are original, and verified with over 1000+ in sales. They come with full
+                            access and ownership transfer, making them rare digital assets for your brand or personal
+                            use.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my payment secure?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We use industry-standard encryption and secure payment processors. Your payment
+                            is held in escrow until the username transfer is complete, providing buyer protection
+                            throughout the process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I Swap a specific username To another Account?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! contact our team. We have connections
+                            to Swap specific usernames To another Account.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly will I receive my username / Account?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>ALL transfers are completed after payment confirmation. high-value
+                            usernames might require additional verification steps.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer refunds?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer full refunds if we are unable to successfully Access the username. Once a
+                            username is successfully Logged, sales are final due to the digital nature of the
+                            product.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">
+                    Have questions or need help finding a specific username? Our team is here to assist you.
+                </p>
+            </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="footer-logo-text">claimer<span class="logo-dot">.</span>me</span>
+                    <p class="footer-tagline">Premium Username Marketplace</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navigation</h3>
+                        <a href="#">Home</a>
+                        <a href="#featured">Featured</a>
+                        <a href="#browse">Browse</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Claimer.me. All rights reserved.
+                </div>
+                <div class="payment-methods">
+                    <span>Accepted Payment Methods:</span>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-bitcoin"></i>
+                    <i class="fab fa-ethereum"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Notification toast -->
+    <div class="toast-container">
+        <!-- Toasts will be added here dynamically -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
