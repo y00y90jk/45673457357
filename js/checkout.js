@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.location.pathname.endsWith("checkout.html")) {
+      window.history.replaceState(null, "", "/checkout");
+  }
+});
 document.addEventListener('DOMContentLoaded', () => {
   // Cache DOM elements for better performance
   const elements = {
