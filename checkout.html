@@ -115,16 +115,16 @@
                 <div class="payment-section">
                     <h3 class="section-title">Select Payment Method</h3>
                     <div class="crypto-selector">
-                        <div class="crypto-option selected" data-value="bitcoin">
-                            <input type="radio" id="bitcoin" name="payment" value="bitcoin" checked>
-                            <label for="bitcoin">
-                                <div class="crypto-icon">
-                                    <img loading="lazy" width="32" height="32"
-                                        src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg" alt="Bitcoin">
-                                </div>
-                                <span>Bitcoin</span>
-                            </label>
-                        </div>
+                        <!-- <div class="crypto-option selected" data-value="bitcoin"> -->
+                        <!-- <input type="radio" id="bitcoin" name="payment" value="bitcoin" checked> -->
+                        <!-- <label for="bitcoin"> -->
+                        <!-- <div class="crypto-icon"> -->
+                        <!-- <img loading="lazy" width="32" height="32" -->
+                        <!-- src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg" alt="Bitcoin"> -->
+                        <!-- </div> -->
+                        <!-- <span>Bitcoin</span> -->
+                        <!-- </label> -->
+                        <!-- </div> -->
                         <div class="crypto-option" data-value="ethereum">
                             <input type="radio" id="ethereum" name="payment" value="ethereum">
                             <label for="ethereum">
@@ -153,6 +153,16 @@
                                         src="https://cryptologos.cc/logos/tether-usdt-logo.svg" alt="USDT ERC20">
                                 </div>
                                 <span>USDT ERC20</span>
+                            </label>
+                        </div>
+                        <div class="crypto-option" data-value="tron">
+                            <input type="radio" id="tron" name="payment" value="tron">
+                            <label for="tron">
+                                <div class="crypto-icon">
+                                    <img loading="lazy" width="32" height="32"
+                                        src="https://cryptologos.cc/logos/tron-trx-logo.svg" alt="TRON">
+                                </div>
+                                <span>TRON</span>
                             </label>
                         </div>
                         <div class="crypto-option" data-value="bnb">
@@ -330,9 +340,6 @@
     <!-- Scripts loaded at the end for faster page load -->
     <script src="js/api-service.js" defer></script>
     <script src="js/checkout.js" defer></script>
-</body>
-
-</html>
 <script>
 if (window.location.pathname.endsWith("checkout.html")) {
     window.history.replaceState(null, "", "/checkout");
